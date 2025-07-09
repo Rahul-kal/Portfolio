@@ -1,34 +1,40 @@
 import Sidebar from "../sidebar/Sidebar";
 import "./navbar.scss";
 import { motion } from "framer-motion";
-
+import { FiArrowUpRight } from "react-icons/fi";
 const Navbar = () => {
+
+  const navItems = ["Home", "About me", "Services", "My Work", "Contact me"];
+
+
   return (
     <div className="navbar">
-      {/* Sidebar Toggle Button */}
-      <Sidebar />
-
+      {/* Sidebar */}
+      <Sidebar/>
       <div className="wrapper">
         <motion.span
-          className="logo"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Rahul
+          Rahul 
         </motion.span>
-        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap" rel="stylesheet" />
+        
+         {/* Navigation Links */}
+        <ul className="nav-links">
+          {navItems.map((item) => (
+            <li key={item}>
+              <a href={`#${item.toLowerCase().replace(/ /g, "")}`}>{item}</a>
+            </li>
+          ))}
+        </ul>
 
-
-        <div className="social">
-          <a href="#"><img src="/facebook.png" alt="Facebook" /></a>
-          <a href="#"><img src="/instagram.png" alt="Instagram" /></a>
-          <a href="#"><img src="/youtube.png" alt="YouTube" /></a>
-          <a href="#"><img src="/dribbble.png" alt="Dribbble" /></a>
-        </div>
+{/* Contact Button */}
+        <button className="contact-btn">
+          Contact <FiArrowUpRight className="arrow" />
+        </button>
       </div>
     </div>
   );
 };
-
 export default Navbar;

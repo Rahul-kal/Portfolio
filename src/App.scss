@@ -43,3 +43,45 @@ a{
         @content;
     }
 }
+
+    body.light-mode {
+    background-color: #fff;
+    color: #111;
+
+    .navbar {
+        background-color: #ffffff;
+        color: #111;
+
+        .nav-links a {
+        color: #111;
+
+        &:hover {
+            color: #ff2e63;
+        }
+        }
+
+        .right-side {
+        .theme-toggle {
+            color: #111;
+        }
+
+        .contact-btn {
+            border-color: #111;
+            color: #111;
+
+            &:hover {
+            background-color: #111;
+            color: #fff;
+            }
+        }
+        }
+
+        .logo {
+        color: #111;
+
+        span {
+            color: #ff2e63;
+        }
+        }
+    }
+    }

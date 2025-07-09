@@ -4,12 +4,15 @@
   height: 100px;
 
   .wrapper {
-    max-width: 1366px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding-left: 90px;
+
+  font-size: 2rem; // ⬅️ Increase base font size here
 
     @include mobile {
       justify-content: flex-end;
@@ -33,25 +36,83 @@
         height: 18px;
       }
     }
-    .logo {
-      font-size: 22px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #e7e7e3; // stylish yellow tone
-      font-family: 'Unbounded', sans-serif;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-      transition: all 0.3s ease-in-out;
+
+        .logo {
+      font-size: 24px;
+      font-weight: 800;
+      font-family: "Unbounded", sans-serif;
+      letter-spacing: 1px;
+      color: #ffffff;
+
+      span {
+        color: #ff2e63; // red dot
+      }
 
       &:hover {
-        color: #ff6b81;
-        transform: scale(1.05);
+        color: #ff9900;
+        cursor: pointer;
       }
 
       @include mobile {
-        font-size: 28px;
+        font-size: 20px;
       }
     }
 
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 32px;
+      font-size: 50px;
+
+      @include mobile {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      li {
+        a {
+          text-decoration: none;
+          font-size: 25px;
+          font-weight: 500;
+          color: #e0e0e0;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #ff9900;
+          }
+        }
+      }
+    }
+
+    .contact-btn {
+      padding: 10px 20px;
+      border: 1.5px solid #ffffff;
+      border-radius: 40px;
+      background: transparent;
+      font-size: 14px;
+      font-weight: 500;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      transition: 0.3s ease;
+
+      .arrow {
+        font-size: 16px;
+      }
+
+      &:hover {
+        background-color: #ff9900;
+        color: #0c0c1d;
+        border-color: #ff9900;
+      }
+
+      @include mobile {
+        width: 100%;
+        justify-content: center;
+      }
+    }
   }
 }

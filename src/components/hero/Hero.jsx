@@ -47,16 +47,20 @@
             initial="initial"
             animate="animate"
             >
-            <motion.h2 variants={textVariants}>Rahul Kaliraman</motion.h2>
+            <motion.h2 variants={textVariants} >Rahul Kaliraman</motion.h2>
             <motion.h1 variants={textVariants}>
-                Web developer
+                I am a Full Stack Developer.
+
             </motion.h1>
             <motion.div variants={textVariants} className="buttons">
-                <motion.button variants={textVariants}>
-                See the Latest Works
-                </motion.button>
-                <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button className="btn primary" variants={textVariants}>
+                My Work
+            </motion.button>
+            <motion.button className="btn outline glow-text" variants={textVariants}>
+                Hire Me
+            </motion.button>
             </motion.div>
+
             <motion.img
                 variants={textVariants}
                 animate="scrollButton"
