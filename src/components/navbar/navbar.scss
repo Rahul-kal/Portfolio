@@ -1,0 +1,57 @@
+@import "../../app.scss";
+
+.navbar {
+  height: 100px;
+
+  .wrapper {
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+    @include mobile {
+      justify-content: flex-end;
+      padding: 20px;
+    }
+
+    span {
+      font-weight: bold;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .social {
+      display: flex;
+      gap: 20px;
+
+      img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #e7e7e3; // stylish yellow tone
+      font-family: 'Unbounded', sans-serif;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: #ff6b81;
+        transform: scale(1.05);
+      }
+
+      @include mobile {
+        font-size: 28px;
+      }
+    }
+
+  }
+}

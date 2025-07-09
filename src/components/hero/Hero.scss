@@ -1,0 +1,122 @@
+@import "../../app.scss";
+
+.hero {
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  position: relative;
+
+  .wrapper {
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+
+    .textContainer {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+
+      @include mobile {
+        height: 50%;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 30px;
+        color: rebeccapurple;
+        letter-spacing: 10px;
+      }
+
+      h1 {
+        font-size: 88px;
+
+        @include mobile {
+          font-size: 36px;
+        }
+      }
+
+      .buttons {
+        button {
+          padding: 20px;
+          border: 1px solid white;
+          border-radius: 10px;
+          background-color: transparent;
+          color: white;
+          margin-right: 20px;
+          cursor: pointer;
+          font-weight: 300;
+        }
+      }
+
+      img {
+        width: 50px;
+      }
+    }
+  }
+ .imageContainer {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 80px;
+
+  img {
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+
+    // ✨ Glowing Shine Effect
+    box-shadow:
+      0 0 15px rgba(255, 255, 255, 0.6),
+      0 0 30px rgba(138, 43, 226, 0.4),  // purple-blue outer glow
+      0 0 60px rgba(138, 43, 226, 0.2);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow:
+        0 0 25px rgba(255, 255, 255, 0.7),
+        0 0 50px rgba(138, 43, 226, 0.5),
+        0 0 80px rgba(138, 43, 226, 0.3);
+    }
+  }
+
+  @include mobile {
+    position: static;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    margin-top: 20px;
+
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+
+
+
+
+  .slidingTextContainer {
+    position: absolute;
+    font-size: 50vh;
+    bottom: -120px;
+    white-space: nowrap;
+    color: #ffffff09;
+    width: 50%;
+    font-weight: bold;
+  }
+}
