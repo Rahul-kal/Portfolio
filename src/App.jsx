@@ -38,7 +38,10 @@ const App = () => {
       </section>
       
       <Portfolio />
-      <About />
+      
+    {/* <About /> */} 
+
+    
       <section id="Contact">
         <Contact />
       </section>
