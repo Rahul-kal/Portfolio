@@ -37,6 +37,17 @@
       }
     }
 
+  .nav-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 8px;
+    transition: transform 0.3s ease;
+  }
+  .nav-icon:hover {
+    transform: scale(1.1);
+  }
+
+
         .logo {
       font-size: 24px;
       font-weight: 800;
