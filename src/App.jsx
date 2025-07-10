@@ -41,7 +41,7 @@ const App = () => {
       
     {/* <About /> */} 
 
-    
+
       <section id="Contact">
         <Contact />
       </section>
