@@ -1,5 +1,6 @@
     import "./Hero.scss";
     import { motion } from "framer-motion";
+    import resume from "../assets/Resume1.pdf";
 
     const textVariants = {
     initial: {
@@ -53,8 +54,18 @@
 
             </motion.h1>
             <motion.div variants={textVariants} className="buttons">
-            <motion.button className="btn primary" variants={textVariants}>
-                My Work
+            <motion.button className="btn primary" variants={textVariants} onClick={"https://drive.google.com/uc?export=download&id=1z2n7Pkc_r1P-oEraDUFv6Tg3tuqMYKn5"}>
+            <motion.a
+            href={resume}
+            download="Rahul_Kaliraman_Resume"
+            className="btn primary"
+            target="_blank"
+            rel="noopener noreferrer"
+            variants={textVariants}
+            >
+            Download CV
+            </motion.a>
+
             </motion.button>
             <motion.button className="btn outline glow-text" variants={textVariants}>
                 Hire Me
