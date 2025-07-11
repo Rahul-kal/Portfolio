@@ -37,15 +37,39 @@
       }
     }
 
-  .nav-icon {
-    width: 40px;
-    height: 40px;
-    margin: 0 8px;
-    transition: transform 0.3s ease;
+  .nav-links {
+  display: flex;
+  gap: 20px;
+
+  li {
+    list-style: none;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.05); // Slight background
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.3); // Glow effect
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .nav-icon {
+        width: 20px;
+        height: 20px;
+        filter: brightness(0) invert(1); // Make dark icons white
+      }
+    }
   }
-  .nav-icon:hover {
-    transform: scale(1.1);
-  }
+}
+
 
 
         .logo {
