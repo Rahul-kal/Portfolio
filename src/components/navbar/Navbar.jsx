@@ -2,17 +2,17 @@ import Sidebar from "../sidebar/Sidebar";
 import "./navbar.scss";
 import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
-import LinkdinImg from "../assets/linkdin.png";
-import githubImg from "../assets/github.png";
-import twitterImg from "../assets/twitter.png";
-import gmailImg from "../assets/gmail.png";
+import LinkdinImg from "../assets/linkedin.svg";
+import githubImg from "../assets/github.svg";
+import twitterImg from "../assets/twitter.svg";
+import leetcodeImg from "../assets/leetcode.svg";
 
 const Navbar = () => {
   const navItems = [
     { name: "LinkedIn", img: LinkdinImg, link: "https://www.linkedin.com/in/rahul-kaliraman-66a341259/" },
     { name: "GitHub", img: githubImg, link: "https://github.com/Rahul-kal" },
     { name: "Twitter", img: twitterImg, link: "https://x.com/Rahul29073" },
-    { name: "Gmail", img: gmailImg, link: "#contact" },
+    { name: "Leetcode", img: leetcodeImg, link: "https://leetcode.com/u/Rahul_0729/" },
   ];
 
   return (
