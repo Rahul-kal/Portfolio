@@ -3,6 +3,7 @@
     import { motion, useScroll, useSpring, useTransform } from "framer-motion";
     import TripMateImg   from "../assets/TripMate.png";
     import QuickShowImg  from "../assets/QuickShow1.png";
+    import ResumeImg from "../assets/ResumeImg.png"
 
     const items = [
         {
