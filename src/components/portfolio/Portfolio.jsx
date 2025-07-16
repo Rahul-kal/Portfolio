@@ -12,8 +12,15 @@
         link: "https://tripmate-2907.vercel.app/",
         desc: "AI Trip Planner is a full-stack travel planning web app that leverages the power of Gemini AI to generate personalized travel itineraries. Built with React.js, TailwindCSS v4, and Firebase, the app allows users to input basic trip details and receive AI-generated plans, complete with destinations, activities, and suggestions. It features Google Authentication, cloud-based data storage via Firestore, and dynamic form handling. Users can view, edit, and save their trip history, and location details are enriched using the Google Places and Photos API. The project also includes responsive design for a smooth user experience and is deployed using Vite and hosted on the web. A mobile version of the app is built using React Native, supporting both Android and iOS platforms. This project showcases full-stack development, AI integration, and real-world API usage.",
     },
-    {
+          {
         id: 2,
+        title: "Resume-Expert",
+        img: ResumeImg,          // ← use the imported variable
+        link: "https://ai-resume-expert.vercel.app/",
+        desc: "ResumeXpert is a full-stack, production-ready SaaS application that allows users to create, edit, and manage multiple resumes with ease. Built using the MERN stack (MongoDB, Express.js, React.js, Node.js), this project demonstrates a complete web development workflow from backend architecture to frontend UI/UX. It integrates modern features like PDF export, image upload, and user authentication, making it ideal for real-world usage and a strong portfolio highlight.",
+    },
+    {
+        id: 3,
         title: "QuickShow",
         img: QuickShowImg,
         link: "https://quickshow.vercel.app",
